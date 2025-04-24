@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//29. Carrinho de Frutas
+let frutas = ["maçã", "banana", "uva"];
+for (let i = 0; i < frutas.length; i++) {
+    console.log(frutas[i]);
+}
+
+//30. Mira Certa
+let pontuacoes = [10, 8, 7, 10, 9];
+let maior = pontuacoes[0];
+for (let i = 1; i < pontuacoes.length; i++) {
+    if (pontuacoes[i] > maior) {
+    maior = pontuacoes[i];
+}
+}
+console.log("Maior pontuação:", maior);
+
+//31. Inventário do Herói
+let inventario = ["espada", "escudo", "poção"];
+console.log("Primeiro item:", inventario[0]);
+console.log("Ultimo item:", inventario[inventario.length - 1]);
+
+//32. Lista de Compras
+let listaCompras = ["arroz", "feijão", "leite"];
+for (let i = 0; i < listaCompras.length; i++) {
+    console.log(listaCompras[i]);
+}
+
+console.log("Total de itens:", listaCompras.length);
+
+//33. Playlist do Dia
+let musicas = ["rock", "pop", "jazz", "clássica"];
+for (let i = 0; i < musicas.length; i++) {
+    console.log(musicas[i]);
+}
+
+//34. Soma Total
+let numeros = [2, 4, 6, 8, 10];
+let Soma = 0;
+for (let i = 0; i < numeros.length; i++) {
+    Soma = Soma + numeros[i];
+}
+console.log("Soma total dos valores:", Soma);
+
+//35. Corrida de Robos
+let tempos = [12.4, 11.8, 13.2, 12.0];
+let soma = 0;
+for (let i = 0; i < tempos.length; i++) {
+    soma = soma + tempos[i];
+}
+let media = soma / tempos.length;
+console.log("Tempo médio dos robôs:", media);
+
+//36. Procurando Itens
+let objetos = ["chave", "óculos", "carteira"];
+let procurado = "carteira";
+let encontrado = false;
+for (let i = 0; i < objetos.length; i++) {
+    if (objetos[i] === procurado) {
+        encontrado = true;
+    }
+}
+if (encontrado) {
+    console.log("Encontrado!");
+} else {
+    console.log("Não está na lista.");
+}
+
+//37. Boletim Escolar
+let notas = [7.5, 8.0, 6.5, 9.0];
+let result = 0;
+for (let i = 0; i < notas.length; i++) {
+    result = result + notas[i];
+}
+let nota = result / notas.length;
+console.log("Média final:", media);
+if (nota >= 7) {
+    console.log("Aprovado!");
+} else {
+    console.log("Reprovado.");
+}
+
+//38. Catálogo de Filmes
+let filmes = ["Matrix", "Interstellar", "A Origem"];
+for (let i = 0; i < filmes.length; i++) {
+    console.log("Você vai assistir:", filmes[i]);
+}
+
+//39. Teclado Virtual
+let teclasPressionadas = ["a", "s", "d", "f"];
+let resultado = "";
+for (let i = 0; i < teclasPressionadas.length; i++) {
+    resultado = resultado + teclasPressionadas[i];
+    if (i < teclasPressionadas.length - 1) {
+        resultado = resultado + "-";
+    }
+}
+console.log("Teclas pressionadas:", resultado);
+
+//40. Contagem Regressiva
+let contagem = [5, 4, 3, 2, 1, 0];
+for (let i = 0; i < contagem.length; i++) {
+    console.log(contagem[i]);
+}
+console.log("Decolar!");
+    </script>
+</body>
+</html>
